@@ -13,7 +13,7 @@
 
 using namespace std; // bad style but improves readability in this toy problem
 
-// tag describes one complete line of input
+// tag describes one complete line of an html file
 class tag{
     bool opening; // is this an opening tag or a closing
     string name;
@@ -49,8 +49,8 @@ tag::tag(const string& str){
     }
 }
 
-// Element describes everything between the element's opening tag and
-// the matching closing tag.
+// Element describes everything in an html file between
+// the element's opening tag and the matching closing tag.
 // For example, the whole html file is an element.
 class element{
     tag root_tag; // the opening tag
